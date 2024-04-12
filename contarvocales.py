@@ -41,7 +41,10 @@ class TestContarVocales(unittest.TestCase):
         resultado = contar_vocales('mUrciElago')
         self.assertEqual(resultado, {'a': 1, 'e': 1, 'i': 1, 'o': 1, 'u': 1})
 
-
+    def test_contar_mUrciElago(self):
+        resultado = contar_vocales('VenENo')
+        self.assertEqual(resultado, {'e': 2, 'o': 1,}) 
+        
 unittest.main()
 
 # Agrego el .lower para que permita poder mezclar mayusculas y minusculas en una misma palabra,
